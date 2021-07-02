@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
-import Genre_movie from "../components/Genre_movie";
+import Genre_movie from "./GenreMovie";
 import axios from "axios";
 import { API_KEY, IMG_ORIGNAL } from "../config";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {
   StarOutlineOutlined,
   ThumbUpAltOutlined,
@@ -40,7 +40,7 @@ const Banner = () => {
     >
       <Header />
       <Genre_movie />
-      <div className="flex text-white opacity-75 flex-col absolute top-40 sm:top-80 left-4 mx-auto sm:left-8 md:left-12 items-start w-10/12 sm:w-9/12  tracking-wider leading-snug">
+      <div className="flex text-white opacity-75 flex-col absolute top-40 sm:top-80 left-4 mx-auto sm:left-8 md:left-12 items-start w-10/12 sm:w-8/12  tracking-wider leading-snug">
         <div className="flex flex-col py-2">
           <p className="font-normal text-yellow-primary text-xs uppercase">
             Today's Featured Film
@@ -56,7 +56,17 @@ const Banner = () => {
               style={{ color: "#fefe33" }}
             />
             <p className="uppercase text-xs">
-              imdb: {content.vote_average}
+              imdb:{" "}
+              <span
+                className={`font-bold ${
+                  content.vote_average > 7
+                    ? "text-green-500"
+                    : "text-red-500 "
+                }`}
+              >
+                {" "}
+                {content.vote_average}
+              </span>
             </p>
           </div>
           <div className="flex items-center space-x-1">
@@ -65,7 +75,7 @@ const Banner = () => {
               style={{ color: "#fefe33" }}
             />
             <p className="uppercase text-xs">
-              Likes: {content.vote_count}
+              Likes: {Math.floor(content.popularity)}
             </p>
           </div>
           <div className="flex items-center space-x-1">
@@ -82,7 +92,7 @@ const Banner = () => {
           {content.overview}
         </p>
         <div className="flex flex-col sm:flex-row mx-auto sm:mx-0 items-center justify-center pt-4 space-x-1 sm:space-x-2">
-          <div className="flex items-center space-x-1 px-3 py-1 sm:px-5 sm:py-2s bg-yellow-secondary rounded-full mb-2 sm:mb-0 cursor-pointer group">
+          <div className="flex items-center space-x-1 px-3 py-1 sm:px-5 sm:py-2 bg-yellow-secondary rounded-full mb-2 sm:mb-0 cursor-pointer group">
             <PlayArrow
               fontSize="small"
               style={{ color: "black" }}
@@ -102,6 +112,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      <div className="h-14 w-full absolute bg-gradient-to-t from-gray-900 via-black to-transparent opacity-50 bottom-0"></div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Genre_movie = () => {
       className="container w-full bg-gradient-to-b from-black to-transparent opacity-80 shadow-lg"
       style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
     >
-      <div className="px-4 mx-auto sm:px-8 md:px-12 flex text-center overflow-hidden whitespace-nowrap overflow-x-scroll  items-center text-gray-400 font-medium font-muli tracking-wide leading-sung h-10 scrollbar-hide space-x-8">
+      <div className="px-4 mx-auto sm:px-8 flex text-center overflow-hidden whitespace-nowrap overflow-x-scroll  items-center text-gray-400 font-medium font-muli tracking-wide leading-sung h-10 scrollbar-hide space-x-8">
         <Link
           path=""
           className="text-xs sm:text-sm hover:text-yellow-primary hover:scale-110 transform transition-all duration-100"

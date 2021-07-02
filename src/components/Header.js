@@ -1,8 +1,4 @@
 import React from "react";
-import {
-  PlayCircleOutline,
-  SearchRounded,
-} from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import Avtar from "../image/Avtar.jpg";
 import { Search } from "@material-ui/icons";
@@ -54,6 +50,7 @@ const Header = () => {
           </Link>
           <img
             src={Avtar}
+            alt="Profile"
             className="rounded-full w-5 h-5 object-contain object-center hover:scale-110 transform transition-all duration-150"
           ></img>
         </div>
