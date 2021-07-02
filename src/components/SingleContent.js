@@ -1,5 +1,5 @@
 import React from "react";
-import Avtar from "../image/Avtar.jpg";
+import NotAvailable from "../image/NotAvailable.png";
 import { IMG_ORIGNAL } from "../config";
 import {
   StarOutlineOutlined,
@@ -16,6 +16,7 @@ const SingleContent = ({
   voteAverage,
 }) => {
   return (
+    // ---------------imgDiv----------------
     <div className="mr-6 mb-6 font-muli text-gray-200 relative">
       <div className="bg-dark bg-blend-darken hover:scale-110 transform duration-300 ease-in-out z-50 ">
         <img
@@ -23,11 +24,13 @@ const SingleContent = ({
           src={
             posterPath
               ? `${IMG_ORIGNAL}${posterPath}`
-              : Avtar
+              : NotAvailable
           }
           alt={title}
           className="h-80 object-contain opacity-70 rounded-md "
         ></img>
+
+        {/* ---------------Movie Hover Details----------------- */}
         <div className="absolute inset-0 pt-20 flex flex-col items-start pl-2 opacity-0 hover:opacity-80 duration-300 transform-none">
           <p className="font-semibold text-sm uppercase tracking-wide pb-2 opacity-90">
             {title}
