@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import FetchMovie from "./FetchMovie";
 import { API_KEY } from "../../config";
-
-const TrendingMovie = () => {
+const ScifiMovie = () => {
   const [page, setPage] = useState(1);
-  const TRENDING_URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}&page=${page}`;
+  const SCIFI_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=878&page=${page}`;
   return (
     <FetchMovie
-      url={TRENDING_URL}
+      url={SCIFI_URL}
       page={page}
       setPage={setPage}
-      headerTitle="Trending now in movies"
+      headerTitle="SciFi BlockBuster Movies"
     />
   );
 };
 
-export default TrendingMovie;
+export default ScifiMovie;

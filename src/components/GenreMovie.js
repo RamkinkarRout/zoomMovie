@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Genre_movie = () => {
+const GenreMovie = () => {
   return (
     <div
       className="container w-full bg-gradient-to-b from-black to-transparent opacity-80 shadow-lg"
@@ -9,110 +9,110 @@ const Genre_movie = () => {
     >
       <div className="px-4 mx-auto sm:px-8 flex text-center overflow-hidden whitespace-nowrap overflow-x-scroll  items-center text-gray-400 font-medium font-muli tracking-wide leading-sung h-10 scrollbar-hide space-x-8">
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-primary hover:scale-110 transform transition-all duration-100"
-        >
-          Trending
-        </Link>
-        <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100"
-        >
-          Discover
-        </Link>
-        <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
-        >
-          Top Rated
-        </Link>
-        <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
-        >
-          Popular
-        </Link>
-        <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
-        >
-          Action
-        </Link>
-        <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
-        >
-          Mystery
-        </Link>
-        <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-primary hover:scale-110 transform transition-all duration-100"
         >
           SciFi
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/TrendingMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100"
+        >
+          Trending
+        </Link>
+        <Link
+          to="/TopRatedMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+        >
+          Top Rated
+        </Link>
+        <Link
+          to="/PopularMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+        >
+          Popular
+        </Link>
+        <Link
+          to="/ActionMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+        >
+          Action
+        </Link>
+        <Link
+          to="/MysteryMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+        >
+          Mystery
+        </Link>
+        <Link
+          to="/DiscoverMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+        >
+          Discover
+        </Link>
+        <Link
+          to="/WesternMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Western
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/HorrorMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Horror
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/AdventureMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Adventure
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/ComedyMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Comedy
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/WarMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           War
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/ThrillerMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Thriller
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/CrimeMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Crime
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/DramaMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Drama
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/FamilyMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Family
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/FantasyMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Fantasy
         </Link>
         <Link
-          path=""
-          className="text-xs sm:text-sm hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
+          to="/HistoryMovie"
+          className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           History
         </Link>
@@ -121,4 +121,4 @@ const Genre_movie = () => {
   );
 };
 
-export default Genre_movie;
+export default GenreMovie;

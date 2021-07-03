@@ -18,33 +18,33 @@ const Header = () => {
         <div className="flex items-center justify-center space-x-1 sm:space-x-4 md:space-x-6 uppercase font-medium">
           <Link
             to="/"
-            className="text-yellow-primary hover:scale-110 transform transition-all duration-150"
+            className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-15 focus:text-yellow-primary "
           >
             Movies
           </Link>
           <Link
             to="/Tvshows"
-            className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150"
+            className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150 focus:text-yellow-primary"
           >
             TvShows
           </Link>
           <Link
             to="/"
-            className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150 hidden sm:block "
+            className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150 hidden sm:block focus:text-yellow-primary "
           >
             Search
           </Link>
           <Link
             to="/"
-            className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150"
+            className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150 focus:text-yellow-primary"
           >
             About
           </Link>
         </div>
         <div className="flex items-center justify-end space-x-1 sm:space-x-2 md:space-x-4">
           <Link
-            to="/Search"
-            className="hover:text-yellow-primary  hover:scale-110 transform transition-all duration-150"
+            to="/"
+            className="hover:text-yellow-primary  hover:scale-110 transform transition-all duration-150 focus:text-yellow-primary"
           >
             <Search fontSize="small" />
           </Link>

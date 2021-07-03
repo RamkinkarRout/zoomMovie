@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Genre_movie from "./GenreMovie";
 import axios from "axios";
-import { API_KEY, IMG_ORIGNAL } from "../config";
+import { IMG_ORIGNAL, API_KEY } from "../config";
 // import { Link } from "react-router-dom";
 import {
   StarOutlineOutlined,
@@ -12,39 +10,35 @@ import {
   Add,
 } from "@material-ui/icons";
 
-const Banner = () => {
-  const TRENDING_ALL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=878`;
+const Banner = ({ url, page }) => {
   const [content, setContent] = useState([]);
   const fetchBanner = async () => {
-    const { data } = await axios.get(TRENDING_ALL);
+    const { data } = await axios.get(url);
     // console.log(data.results);
     setContent(
       data.results[
         Math.floor(Math.random() * data.results.length)
       ]
     );
-    console.log(content);
   };
-
+  console.log(content);
   useEffect(() => {
     fetchBanner();
-  }, []);
-  const imdb_movie = `${content.release_date}`;
+  }, [page]);
 
   return (
     <div
-      className="w-full relative bg-cover bg-center bg-no-repeat h-screen bg-black bg-blend-darken bg-opacity-50"
+      className="w-full -mt-24 bg-cover bg-center bg-no-repeat h-screen bg-black bg-blend-darken bg-opacity-50"
       style={{
         backgroundImage: `url(${IMG_ORIGNAL}${content.backdrop_path})`,
       }}
     >
-      <Header />
-      <Genre_movie />
       <div className="flex text-white opacity-75 flex-col absolute top-40 sm:top-80 left-4 mx-auto sm:left-8 md:left-12 items-start w-10/12 sm:w-8/12  tracking-wider leading-snug">
         <div className="flex flex-col py-2">
           <p className="font-normal text-yellow-primary text-xs uppercase">
             Today's Featured Film
           </p>
+          {/* ---------------------title---------------- */}
           <h1 className="font-bold uppercase tracking-widest text-xl sm:text-2xl md:text-3xl leading-relaxed">
             {content.title || content.name}
           </h1>
@@ -83,8 +77,13 @@ const Banner = () => {
               fontSize="small"
               style={{ color: "#fefe33" }}
             />
+
+            {/* -------------------airDate------------ */}
             <p className="uppercase text-xs">
-              year: {imdb_movie.substr(0, 4)}
+              year:{" "}
+              {content.release_date
+                ? content.release_date
+                : content.first_air_date}
             </p>
           </div>
         </div>
