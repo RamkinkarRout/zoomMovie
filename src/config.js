@@ -1,6 +1,8 @@
 const API_KEY = process.env.REACT_APP_API_KEY;
 // ---------image---------
 const IMG_ORIGNAL = "https://image.tmdb.org/t/p/original/";
+const W_500 = "https://image.tmdb.org/t/p/w500/";
+const W_300 = "https://image.tmdb.org/t/p/w300/";
 
 // ----------MOVIE & TV-------------
 // TRENDING_MOVIE = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`;
@@ -41,4 +43,4 @@ const IMG_ORIGNAL = "https://image.tmdb.org/t/p/original/";
 // ANIMATION_TV = `https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_genres=16`;
 // FAMILY_TV = `https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_genres=10751`;
 
-export { API_KEY, IMG_ORIGNAL };
+export { API_KEY, IMG_ORIGNAL, W_300, W_500 };

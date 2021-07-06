@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Avtar from "../image/Avtar.jpg";
 import { Search } from "@material-ui/icons";
 
 const Header = () => {
   return (
-    <div className="container text-gray-400 font-regular h-12 border-b-2 text-xs sm:text-sm md:text-sm border-black bg-gradient-to-t from-black to-black opacity-80 shadow-2xl font-muli">
+    <div className=" container text-gray-400 font-regular h-12 border-b-2 text-xs sm:text-sm md:text-sm border-black bg-gradient-to-t from-black to-black opacity-80 shadow-2xl font-muli">
       <div className="mx-auto px-4 md:px-12 flex justify-between  h-12 tracking-wider leading-snug ">
         {/* ------------logo--------------- */}
         <div className=" flex font-semibold items-center justify-start cursor-pointer">
@@ -16,38 +16,43 @@ const Header = () => {
 
         {/* ------------center nav------------ */}
         <div className="flex items-center justify-center space-x-1 sm:space-x-4 md:space-x-6 uppercase font-medium">
-          <Link
+          <NavLink
+            activeStyle={{ color: "#fefe33" }}
             to="/"
             className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-15 focus:text-yellow-primary "
           >
             Movies
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "#fefe33" }}
             to="/Tvshows"
             className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150 focus:text-yellow-primary"
           >
             TvShows
-          </Link>
-          <Link
-            to="/"
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "#fefe33" }}
+            to="/Search"
             className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150 hidden sm:block focus:text-yellow-primary "
           >
             Search
-          </Link>
-          <Link
-            to="/"
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "#fefe33" }}
+            to="/About"
             className="hover:text-yellow-primary hover:scale-110 transform transition-all duration-150 focus:text-yellow-primary"
           >
             About
-          </Link>
+          </NavLink>
         </div>
         <div className="flex items-center justify-end space-x-1 sm:space-x-2 md:space-x-4">
-          <Link
+          <NavLink
+            activeStyle={{ color: "#fefe33" }}
             to="/"
             className="hover:text-yellow-primary  hover:scale-110 transform transition-all duration-150 focus:text-yellow-primary"
           >
             <Search fontSize="small" />
-          </Link>
+          </NavLink>
           <img
             src={Avtar}
             alt="Profile"

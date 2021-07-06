@@ -6,6 +6,7 @@ import {
   ThumbUpAltOutlined,
   Add,
 } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const SingleContent = ({
   id,
@@ -27,7 +28,7 @@ const SingleContent = ({
               : NotAvailable
           }
           alt={title}
-          className="h-80 object-contain opacity-70 rounded-md "
+          className="h-80 object-contain opacity-70 rounded-xl "
         ></img>
 
         {/* ---------------Movie Hover Details----------------- */}
@@ -74,9 +75,13 @@ const SingleContent = ({
               fontSize="small"
               style={{ color: "black" }}
             />
-            <p className="uppercase text-xs text-black">
+
+            <Link
+              to={`/WatchDetails/${id}`}
+              className="uppercase text-xs text-black"
+            >
               watch details
-            </p>
+            </Link>
           </div>
         </div>
       </div>

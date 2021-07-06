@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const GenreMovie = () => {
   return (
@@ -8,114 +8,132 @@ const GenreMovie = () => {
       style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
     >
       <div className="px-4 mx-auto sm:px-8 flex text-center overflow-hidden whitespace-nowrap overflow-x-scroll  items-center text-gray-400 font-medium font-muli tracking-wide leading-sung h-10 scrollbar-hide space-x-8">
-        <Link
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-primary hover:scale-110 transform transition-all duration-100"
         >
           SciFi
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/TrendingMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100"
         >
           Trending
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/TopRatedMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Top Rated
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/PopularMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Popular
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/ActionMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Action
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/MysteryMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Mystery
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/DiscoverMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Discover
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/WesternMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Western
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/HorrorMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Horror
-        </Link>
-        <Link
-          to="/AdventureMovie"
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
+          to="/AnimationMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
-          Adventure
-        </Link>
-        <Link
+          Animation
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/ComedyMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Comedy
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/WarMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           War
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/ThrillerMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Thriller
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/CrimeMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Crime
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/DramaMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Drama
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/FamilyMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           Family
-        </Link>
-        <Link
-          to="/FantasyMovie"
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
+          to="/RomanceMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
-          Fantasy
-        </Link>
-        <Link
+          Romance
+        </NavLink>
+        <NavLink
+          activeStyle={{ color: "#fefe33" }}
           to="/HistoryMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100 "
         >
           History
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

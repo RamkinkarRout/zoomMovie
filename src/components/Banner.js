@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { IMG_ORIGNAL, API_KEY } from "../config";
+import { IMG_ORIGNAL } from "../config";
 // import { Link } from "react-router-dom";
 import {
   StarOutlineOutlined,
@@ -9,6 +9,7 @@ import {
   PlayArrow,
   Add,
 } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const Banner = ({ url, page }) => {
   const [content, setContent] = useState([]);
@@ -21,7 +22,7 @@ const Banner = ({ url, page }) => {
       ]
     );
   };
-  console.log(content);
+  // console.log(content);
   useEffect(() => {
     fetchBanner();
   }, [page]);
@@ -105,9 +106,12 @@ const Banner = ({ url, page }) => {
               fontSize="small"
               style={{ color: "black" }}
             />
-            <p className="uppercase text-xs text-black">
+            <Link
+              to={`/WatchDetails/${content.id}`}
+              className="uppercase text-xs text-black"
+            >
               watch details
-            </p>
+            </Link>
           </div>
         </div>
       </div>

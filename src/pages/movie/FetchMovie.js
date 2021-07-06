@@ -33,6 +33,7 @@ const FetchMovie = ({
           {content &&
             content.map((c) => (
               <SingleContent
+                backdrop_path={c.backdrop_path}
                 key={c.id}
                 id={c.id}
                 title={c.title || c.name}
