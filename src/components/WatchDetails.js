@@ -60,6 +60,8 @@ const WatchDetails = () => {
           budget={content.budget}
           popularity={content.popularity}
           crew={crew}
+          yKey={key}
+          id={handel}
         />
       )}
     </>

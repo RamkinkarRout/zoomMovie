@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IMG_ORIGNAL, W_300 } from "../config";
 import {
   StarOutlineOutlined,
@@ -6,8 +6,10 @@ import {
   EventNoteOutlined,
   AccessTime,
   SupervisorAccountOutlined,
+  PlayArrow,
 } from "@material-ui/icons";
-import DetailCrew from "./DetailCrew";
+import YouTube from "react-youtube";
+
 const DetailsBanner = ({
   backdrop_path,
   poster_path,
@@ -23,8 +25,18 @@ const DetailsBanner = ({
   budget,
   popularity,
   crew,
+  handel,
+  yKey,
 }) => {
-  console.log(crew);
+  const opts = {
+    height: "480",
+    width: "90%",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
+
   return (
     <>
       <div
@@ -171,11 +183,18 @@ const DetailsBanner = ({
                     }
                     alt={c.name}
                     title={c.name}
-                    className="object-containh-52 rounded-lg opacity-75 hover:opacity-100 h-52"
+                    className="object-containh-52 rounded-lg opacity-75 hover:opacity-100 h-52 pb-4"
                   ></img>
                 ))}
             </div>
           </div>
+        </div>
+        <div className=" bg-gradient-to-r from-black via-gray-900 to-black">
+          <YouTube
+            videoId={yKey}
+            opts={opts}
+            className="mx-auto"
+          />
         </div>
       </div>
     </>
