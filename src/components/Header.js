@@ -48,7 +48,7 @@ const Header = () => {
         <div className="flex items-center justify-end space-x-1 sm:space-x-2 md:space-x-4">
           <NavLink
             activeStyle={{ color: "#fefe33" }}
-            to="/"
+            to="/Search"
             className="hover:text-yellow-primary  hover:scale-110 transform transition-all duration-150 focus:text-yellow-primary"
           >
             <Search fontSize="small" />

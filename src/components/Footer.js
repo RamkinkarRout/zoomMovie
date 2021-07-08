@@ -33,7 +33,7 @@ const Footer = () => {
               fontSize="small"
               className="absolute inset-0 -left-1 top-1 pb-1"
             />
-            <button className="px-3 text-black opacity-80 animate-pulse py-1 rounded-md bg-yellow-primary">
+            <button className="px-3 text-black opacity-90 animate-pulse py-1 rounded-md bg-yellow-primary">
               Sub Me
             </button>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
           <p className="opacity-90 font-medium leading-snug tracking-wider ">
             Follow Us
           </p>
-          <div className="flex space-x-1 opacity-80">
+          <div className="flex space-x-1 opacity-90">
             <a href="https://www.facebook.com/ramkinkar.rout">
               <Facebook
                 style={{ color: "yellow" }}

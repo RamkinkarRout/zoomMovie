@@ -28,6 +28,7 @@ import ActionSeries from "./pages/tvSeries/ActionSeries";
 import WatchDetails from "./components/WatchDetails";
 import WatchDetailsTV from "./pages/tvSeries/WatchDetailsTV";
 import Footer from "./components/Footer";
+import Search from "./components/Search";
 function App() {
   return (
     <>
@@ -137,6 +138,7 @@ function App() {
             component={WatchDetails}
             exact
           />
+          <Route path="/Search" component={Search} exact />
         </Switch>
         <Footer />
       </BrowserRouter>
