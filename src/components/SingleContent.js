@@ -15,7 +15,9 @@ const SingleContent = ({
   posterPath,
   popularity,
   voteAverage,
+  media_type,
 }) => {
+  console.log(media_type);
   return (
     // ---------------imgDiv----------------
     <div className="mr-6 mb-6 font-muli text-gray-200 relative">
@@ -76,12 +78,21 @@ const SingleContent = ({
               style={{ color: "black" }}
             />
 
-            <Link
-              to={`/WatchDetails/${id}`}
-              className="uppercase text-xs text-black"
-            >
-              watch details
-            </Link>
+            {media_type == "tv" ? (
+              <Link
+                to={`/TvShows/WatchDetailsTv/${id}`}
+                className="uppercase text-xs text-black"
+              >
+                watch details
+              </Link>
+            ) : (
+              <Link
+                to={`WatchDetails/${id}`}
+                className="uppercase text-xs text-black"
+              >
+                watch details
+              </Link>
+            )}
           </div>
         </div>
       </div>

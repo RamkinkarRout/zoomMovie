@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IMG_ORIGNAL, W_300 } from "../config";
 import {
   StarOutlineOutlined,
@@ -6,7 +6,6 @@ import {
   EventNoteOutlined,
   AccessTime,
   SupervisorAccountOutlined,
-  PlayArrow,
 } from "@material-ui/icons";
 import YouTube from "react-youtube";
 
@@ -29,8 +28,8 @@ const DetailsBanner = ({
   yKey,
 }) => {
   const opts = {
-    height: "480",
-    width: "90%",
+    height: "360",
+    width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -141,7 +140,7 @@ const DetailsBanner = ({
         <div className="w-full h-12 text-white  absolute bottom-0 "></div>
       </div>
       {/* -------------------body----------------- */}
-      <div className="absolute bottom-0 -mb-5 sm:-mb-0 bg-gradient-to-t from-black via-black to-transparent w-full h-12 opacity-75"></div>
+      <div className="absolute bottom-0 -mb-5 bg-gradient-to-t from-black via-black to-transparent w-full h-12 opacity-75"></div>
       <div className="bg-gradient-to-r from-black via-gray-900 to-black font-muli w-full h-screen">
         <div className="w-full flex flex-col sm:flex-row sm:gap-28 lg:gap-1 text-white items-center justify-center opacity-90">
           <div className="flex flex-col mt-2  lg:w-80 w-48 sm:px-4 md:px-14 opacity-80 items-center sm:items-start">
@@ -189,7 +188,7 @@ const DetailsBanner = ({
             </div>
           </div>
         </div>
-        <div className=" bg-gradient-to-r from-black via-gray-900 to-black">
+        <div className=" bg-gradient-to-r from-black via-gray-900 to-black z-20 pb-5">
           <YouTube
             videoId={yKey}
             opts={opts}

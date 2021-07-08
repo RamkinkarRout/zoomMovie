@@ -26,6 +26,8 @@ import RomanceMovie from "./pages/movie/RomanceMovie";
 import HistoryMovie from "./pages/movie/HistoryMovie";
 import ActionSeries from "./pages/tvSeries/ActionSeries";
 import WatchDetails from "./components/WatchDetails";
+import WatchDetailsTV from "./pages/tvSeries/WatchDetailsTV";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -35,7 +37,7 @@ function App() {
 
         <Switch>
           <Route
-            path="/"
+            path="/ScifiMovie"
             component={ScifiMovie}
             exact
           ></Route>
@@ -44,11 +46,7 @@ function App() {
             component={DiscoverMovie}
             exact
           ></Route>
-          <Route
-            path="/TrendingMovie"
-            component={TrendingMovie}
-            exact
-          />
+          <Route path="/" component={TrendingMovie} exact />
           <Route
             path="/TopRatedMovie"
             component={TopRatedMovie}
@@ -130,11 +128,17 @@ function App() {
             exact
           />
           <Route
+            path="/TvShows/WatchDetailsTv/:handel"
+            component={WatchDetailsTV}
+            exact
+          />
+          <Route
             path="/WatchDetails/:handel"
             component={WatchDetails}
             exact
           />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </>
   );

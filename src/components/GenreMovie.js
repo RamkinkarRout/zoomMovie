@@ -13,14 +13,14 @@ const GenreMovie = () => {
           to="/"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-primary hover:scale-110 transform transition-all duration-100"
         >
-          SciFi
+          Trending
         </NavLink>
         <NavLink
           activeStyle={{ color: "#fefe33" }}
-          to="/TrendingMovie"
+          to="/ScifiMovie"
           className="text-xs sm:text-sm focus:text-yellow-600 hover:text-yellow-secondary hover:scale-110 transform transition-all duration-100"
         >
-          Trending
+          Scifi
         </NavLink>
         <NavLink
           activeStyle={{ color: "#fefe33" }}

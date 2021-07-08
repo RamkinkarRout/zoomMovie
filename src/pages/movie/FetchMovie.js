@@ -15,6 +15,7 @@ const FetchMovie = ({
   const fetchTrending = async () => {
     const { data } = await axios.get(url);
     setContent(data.results);
+    console.log(data.results);
     setTotalPage(data.total_pages);
   };
   useEffect(() => {
@@ -41,6 +42,7 @@ const FetchMovie = ({
                 popularity={Math.floor(c.popularity)}
                 posterPath={c.poster_path}
                 voteAverage={c.vote_average}
+                media_type={c.media_type}
               />
             ))}
         </div>
