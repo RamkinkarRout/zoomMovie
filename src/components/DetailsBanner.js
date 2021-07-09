@@ -28,7 +28,7 @@ const DetailsBanner = ({
   yKey,
 }) => {
   const opts = {
-    height: "360",
+    height: "400",
     width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters

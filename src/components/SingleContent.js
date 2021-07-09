@@ -1,6 +1,6 @@
 import React from "react";
 import NotAvailable from "../image/NotAvailable.png";
-import { IMG_ORIGNAL } from "../config";
+import { W_300 } from "../config";
 import {
   StarOutlineOutlined,
   ThumbUpAltOutlined,
@@ -26,7 +26,7 @@ const SingleContent = ({
           id={id}
           src={
             posterPath
-              ? `${IMG_ORIGNAL}${posterPath}`
+              ? `${W_300}${posterPath}`
               : NotAvailable
           }
           alt={title}
