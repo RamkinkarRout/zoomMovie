@@ -1,3 +1,27 @@
+Check out the Full site here-
+https://60e7c4f2922616417f1aeab3--ecstatic-jones-d62c9c.netlify.app/
+
+#preview
+![Screenshot (19)](https://user-images.githubusercontent.com/26031892/125026604-955a9f00-e0a2-11eb-90bd-71112117925b.png)
+![Screenshot (20)](https://user-images.githubusercontent.com/26031892/125026667-b8854e80-e0a2-11eb-9f18-e5aeaf6b12e4.png)
+![Screenshot (21)](https://user-images.githubusercontent.com/26031892/125026670-ba4f1200-e0a2-11eb-9382-8a3e58eaba47.png)
+![Screenshot (22)](https://user-images.githubusercontent.com/26031892/125026677-bcb16c00-e0a2-11eb-9e0f-b7a5e85f1376.png)![Screenshot (15)](https://user-images.githubusercontent.com/26031892/125030028-1a948280-e0a8-11eb-82b2-2349826c16d6.png)
+![Screenshot (26)](https://user-images.githubusercontent.com/26031892/125030044-1ff1cd00-e0a8-11eb-8c52-b51dc226f55f.png)
+
+![Screenshot (23)](https://user-images.githubusercontent.com/26031892/125026684-bfac5c80-e0a2-11eb-8973-51d76093fc41.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/26031892/125026690-c2a74d00-e0a2-11eb-8d2e-a489614bb494.png)
+![Screenshot (25)](https://user-images.githubusercontent.com/26031892/125026703-c6d36a80-e0a2-11eb-8ab9-a12aa3c8c9b7.png)
+![Screenshot (26)](https://user-images.githubusercontent.com/26031892/125026716-caff8800-e0a2-11eb-801b-711adda006ce.png)
+![Screenshot (7)](https://user-images.githubusercontent.com/26031892/125026719-cd61e200-e0a2-11eb-98ef-e6c76c3b9d1a.png)
+![Screenshot (8)](https://user-images.githubusercontent.com/26031892/125026727-d05cd280-e0a2-11eb-81e9-d7613c6d14ac.png)
+![Screenshot (9)](https://user-images.githubusercontent.com/26031892/125026736-d357c300-e0a2-11eb-9401-23952444e036.png)
+![Screenshot (10)](https://user-images.githubusercontent.com/26031892/125026760-dce12b00-e0a2-11eb-8d38-c82acf0b6dcd.png)
+![Screenshot (11)](https://user-images.githubusercontent.com/26031892/125026889-0c903300-e0a3-11eb-9e27-b4e637e3add4.png)
+![Screenshot (12)](https://user-images.githubusercontent.com/26031892/125027118-5bd66380-e0a3-11eb-9a49-74e1ca8a4e7d.png)
+![Screenshot (13)](https://user-images.githubusercontent.com/26031892/125027286-a1932c00-e0a3-11eb-9be7-eaa8cc9054fc.png)
+![Screenshot (14)](https://user-images.githubusercontent.com/26031892/125027466-ea4ae500-e0a3-11eb-9795-d199ce3c9867.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
