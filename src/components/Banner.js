@@ -97,9 +97,12 @@ const Banner = ({ url, page }) => {
               fontSize="small"
               style={{ color: "black" }}
             />
-            <p className="uppercase text-xs text-black group-hover:text-gray-500">
+            <Link
+              to={`/WatchDetails/${content.id}`}
+              className="uppercase text-xs text-black group-hover:text-gray-500"
+            >
               watch trailer
-            </p>
+            </Link>
           </div>
           <div className="flex items-center space-x-1 px-3 py-1 sm:px-5 sm:py-2 bg-gray-300 hover:bg-yellow-secondary rounded-full cursor-pointer">
             <Add
