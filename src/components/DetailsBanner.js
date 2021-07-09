@@ -140,7 +140,7 @@ const DetailsBanner = ({
         <div className="w-full h-12 text-white  absolute bottom-0 "></div>
       </div>
       {/* -------------------body----------------- */}
-      <div className="absolute bottom-0 -mb-5 bg-gradient-to-t from-black via-black to-transparent w-full h-12 opacity-75"></div>
+      <div className="absolute bottom-0 -mb-10 sm:-mb-5 bg-gradient-to-t from-black via-black to-transparent w-full h-12 opacity-75"></div>
       <div className="bg-gradient-to-r from-black via-gray-900 to-black font-muli w-full h-screen">
         <div className="w-full flex flex-col sm:flex-row sm:gap-28 lg:gap-1 text-white items-center justify-center opacity-90">
           <div className="flex flex-col mt-2  lg:w-80 w-48 sm:px-4 md:px-14 opacity-80 items-center sm:items-start">

@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center space-x-4 py-4 w-full border-t-2 border-gray-400 text-gray-400">
+      <div className="flex justify-center space-x-4 py-4 w-full border-t-2 border-gray-400 text-gray-400 px-4">
         <p className="font-light uppercase leading-snug tracking-wide py-1">
           ©2021 ZooM,Movie Tvseries Entertaining Platform,
           All Rights Reserved.
