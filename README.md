@@ -1,5 +1,5 @@
-#Check out the Full site here💖
-https://60e7c4f2922616417f1aeab3--ecstatic-jones-d62c9c.netlify.app/
+#Check out the Full site here💖 
+https://ecstatic-jones-d62c9c.netlify.app/
 
 #About🔥
 Fully featured movie app with 12 catagories of genres with each genre has thier total pages of 500 to 1000.Each movie contains full details with Banner,poster,overview,release date,budget with cast details in a scroll tab.Each movie trailer also can be accessable by checking full details page. Search page also Fully working .Explore Urslef🤩
