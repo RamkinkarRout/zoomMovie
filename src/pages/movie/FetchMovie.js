@@ -20,6 +20,7 @@ const FetchMovie = ({
   };
   useEffect(() => {
     fetchTrending();
+    // react - hooks / exhaustive - deps;
   }, [page]);
 
   return (

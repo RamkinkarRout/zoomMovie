@@ -78,7 +78,7 @@ const SingleContent = ({
               style={{ color: "black" }}
             />
 
-            {media_type == "tv" ? (
+            {media_type === "tv" ? (
               <Link
                 to={`/TvShows/WatchDetailsTv/${id}`}
                 className="uppercase text-xs text-black"

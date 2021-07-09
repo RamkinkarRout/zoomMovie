@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { SearchOutlined } from "@material-ui/icons";
 import { API_KEY, IMG_ORIGNAL } from "../config";
 import SingleContent from "./SingleContent";
-import { Button, TextField } from "@material-ui/core";
+// import { Button, TextField } from "@material-ui/core";
 
 const ACTION_MOVIE = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=28`;
 const Search = () => {
@@ -47,19 +47,20 @@ const Search = () => {
         }}
       >
         <div className="justify-center relative top-2/4 left-2/4 font-muli w-1 flex space-x-1">
-          <SearchOutlined
-            style={{ color: "yellow" }}
-            fontSize="large"
-            className="m-auto"
-          />
           <input
-            type="search"
+            type="text"
+            value={searchText}
             placeholder="Search Movies"
             style={{ flex: "1" }}
             variant="filled"
             onChange={(e) => setSearchText(e.target.value)}
             onSubmit={fetchResult()}
-            className="px-4 text-gray-200 py-1 sm:px-8 text-left sm:py-2 md:px-14 md:py-2 bg-transparent border-2 border-gray-400  focus:outline-none focus:ring-black  focus:ring-2"
+            className="px-4 text-gray-200 py-1 sm:px-8 text-left sm:py-2 md:px-14 md:py-2 bg-transparent border-2 border-gray-400  focus:outline-none focus:ring-yellow-700  focus:ring-2"
+          />
+          <SearchOutlined
+            style={{ color: "yellow" }}
+            fontSize="large"
+            className="m-auto cursor-pointer"
           />
         </div>
       </div>

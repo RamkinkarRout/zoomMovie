@@ -39,7 +39,7 @@ const WatchDetails = () => {
     fetchDataWithId();
     fetchVideoKey();
     fetchCrew();
-  }, []);
+  }, [handel]);
   return (
     <>
       {content && (
